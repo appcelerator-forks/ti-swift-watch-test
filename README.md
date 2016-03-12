@@ -19,6 +19,7 @@ The only thig I did was to use XCode and set up a phone sim with a watch sim for
 
 ## Screen Shots
 ![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide1.png)
+![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide4.png)
 ![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide2.png)
 ![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide3.png)
 
