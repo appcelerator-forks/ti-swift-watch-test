@@ -17,5 +17,9 @@ This project was created and edited using Sublime Text 3 (and a few custom plugi
 The only thig I did was to use XCode and set up a phone sim with a watch sim for testing.
 
 
+## Screen Shots
+![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide1.png)
+![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide2.png)
+![](https://github.com/magnatronus/ti-swift-watch-test/blob/master/screens/Slide3.png)
 
 
