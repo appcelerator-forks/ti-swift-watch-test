@@ -1,0 +1,17 @@
+"#chat":{
+	borderWidth: 2,
+  	borderColor: '#bbb',
+  	borderRadius: 5,
+  	top: 10,
+  	left: 20,
+  	right: 20,
+  	height: 120,
+  	hintText: "type a message here...."
+}
+
+"#messageList":{
+	left: 10,
+	right: 10,
+	top: 10,
+	layout: "vertical"
+}

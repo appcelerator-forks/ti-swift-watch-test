@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<Label id="sdkStatus" top="20" />
+		<Label id="watchStatus" top="10"/>
+		<View height="Ti.UI.SIZE">
+			<Label height="Ti.UI.SIZE" left="20">Watch AutoReplies:</Label>
+			<Switch id="autoReply" right="20"/>
+		</View>
+		<TextArea id="chat" onReturn="processMessage"/>
+		<ScrollView id="messageList" />
+	</Window>
+</Alloy>

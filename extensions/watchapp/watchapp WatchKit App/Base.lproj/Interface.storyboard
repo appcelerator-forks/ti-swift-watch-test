@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Message-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="Message" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchapp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="left" layout="vertical" id="dxy-Lp-fBx">
+                            <items>
+                                <label alignment="left" text="Chat Disconnected" id="NgJ-RZ-gzf">
+                                    <color key="textColor" red="0.98039215690000003" green="0.066666666669999999" blue="0.30980392159999998" alpha="1" colorSpace="calibratedRGB"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="sj7-MW-jUC">
+                            <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <label alignment="left" text="[message]" numberOfLines="0" id="PHn-Gq-Izb">
+                            <fontDescription key="font" type="system" pointSize="14"/>
+                        </label>
+                        <separator alignment="left" id="Jze-Y1-AAB">
+                            <color key="color" red="0.0" green="0.50196081400000003" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Reply" id="9Sx-6x-Xo9">
+                            <color key="titleColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <action selector="messageReply" destination="AgC-eL-Hgc" id="tD4-JR-LVt"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="chatLabel" destination="NgJ-RZ-gzf" id="a9i-fr-8Mk"/>
+                        <outlet property="phoneMsg" destination="PHn-Gq-Izb" id="7H4-Ai-AXr"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--Replies-->
+        <scene sceneID="Omx-m6-0cf">
+            <objects>
+                <controller identifier="Replies" title="Replies" id="BhO-b5-SGb" customClass="RepliesInterfaceController" customModule="watchapp_WatchKit_Extension">
+                    <items>
+                        <table alignment="left" id="TDD-Yh-aGa">
+                            <items>
+                                <tableRow identifier="replyRow" id="lX0-hh-W77" customClass="ReplyRowController" customModule="watchapp_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="aE1-mF-R5q">
+                                        <items>
+                                            <label alignment="left" text="REPLY" id="ahh-J7-xFO"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="replyLabel" destination="ahh-J7-xFO" id="xU7-do-kbW"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="repliesTable" destination="TDD-Yh-aGa" id="WcG-Oa-wf7"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="620" y="345"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="watchapp_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>
