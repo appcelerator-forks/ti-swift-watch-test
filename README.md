@@ -16,7 +16,7 @@ This project was created and edited using Sublime Text 3 (and a custom plugin I 
 
 Note: Sometimes I needed to do the build twice (or at least start with the sim's running) - possibly a timimg issue?
 
-Also if I changed the watch project I found it was better to delete the Ti build dur before re running.
+Also if I changed the watch project I found it was better to delete the Ti build dir before re running.
 
 
 The only thig I did was to use XCode and set up a phone sim with a watch sim for testing.
