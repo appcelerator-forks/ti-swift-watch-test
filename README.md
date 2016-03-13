@@ -19,7 +19,7 @@ Note: Sometimes I needed to do the build twice (or at least start with the sim's
 Also if I changed the watch project I found it was better to delete the Ti build dir before re running.
 
 
-The only thig I did was to use XCode and set up a phone sim with a watch sim for testing.
+The only other thing I did was to use XCode (Window->Devices) to set up a phone sim with a watch sim for testing.
 
 
 ## Screen Shots
